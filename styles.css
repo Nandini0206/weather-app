@@ -27,3 +27,8 @@
 .temperture {
   flex-direction: column;
 }
+
+.degree-section {
+  display: flex;
+  align-items: center;
+}
