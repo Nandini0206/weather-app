@@ -11,6 +11,8 @@ window.addEventListener("load", function() {
     });
 
     fetch(api)
-      .then(data)
+      .then(response => {
+        return response.json();
+      })
   }
 });
