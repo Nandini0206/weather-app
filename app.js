@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
       long = position.coords.longitude;
       lat = position.coords.latitude;
 
-      const api = `https://api.darksky.net/forecast/55a4729d227ab7ca1bcc05dcbd75ff69/37.8267,-122.4233`
+      const api = `https://api.darksky.net/forecast/55a4729d227ab7ca1bcc05dcbd75ff69/${lat},${long}`;
     });
   }
 });
