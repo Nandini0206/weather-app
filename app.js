@@ -17,7 +17,6 @@ window.addEventListener("load", function() {
           return response.json();
         })
         .then(data => {
-          console.log(data);
           const {temperature, summary } = data.currently;
           tempDegree.textContent = temperature;
           tempDescription.textContent = summary;
