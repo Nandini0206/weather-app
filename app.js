@@ -27,6 +27,6 @@ window.addEventListener("load", function() {
 
   function.setIcons(icon, iconID) {
     const skycons =  new skycons({color: "white"});
-    const currentIcon = icon.replace
+    const currentIcon = icon.replace(/-/g, "_");
   }
 });
