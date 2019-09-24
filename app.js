@@ -17,12 +17,16 @@ window.addEventListener("load", function() {
           return response.json();
         })
         .then(data => {
-          const {temperature, summary } = data.currently;
+          const {temperature, summary, icon } = data.currently;
           tempDegree.textContent = temperature;
           tempDescription.textContent = summary;
           locationTimezone.textContent = data.timezone;
-
         });
     });
+  }
+
+  function.setIcons(icon, iconID) {
+    const skycons =  new skycons({color: "white"});
+    const currentIcon = icon.replace
   }
 });
