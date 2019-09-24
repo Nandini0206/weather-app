@@ -20,6 +20,8 @@ window.addEventListener("load", function() {
           console.log(data);
           const {temperature, summary } = data.currently;
           tempDegree.textContent = temperature;
+          tempDescription.textContent = summary;
+          locationTimezone.textContent = data.timezone;
 
         });
     });
