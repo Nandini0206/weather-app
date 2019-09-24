@@ -19,6 +19,8 @@ window.addEventListener("load", function() {
         .then(data => {
           console.log(data);
           const {temperature, summary } = data.currently;
+          tempDegree.textContent = temperature;
+
         });
     });
   }
